@@ -1,7 +1,7 @@
 lvim.transparent_window = true
-lvim.colorscheme = "duskfox"
+lvim.colorscheme = 'duskfox'
 
-if (lvim.colorscheme == "onedark") then
+if (lvim.colorscheme == 'onedark') then
     require('onedark').setup({
         style = 'warmer'
     })

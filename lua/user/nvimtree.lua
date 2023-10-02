@@ -6,17 +6,17 @@ local function my_on_attach(bufnr)
             api.node.open.edit() -- expand or collapse folder
         else
             api.node.open.edit() -- open file
-            api.tree.close() -- Close the tree if file was opened
+            api.tree.close()     -- Close the tree if file was opened
         end
     end
     local function vsplit_preview() -- open as vsplit on current node
         local node = api.tree.get_node_under_cursor()
         if node.nodes ~= nil then
-            api.node.open.edit() -- expand or collapse folder
+            api.node.open.edit()     -- expand or collapse folder
         else
             api.node.open.vertical() -- open file as vsplit
         end
-        api.tree.focus()    -- Finally refocus on tree if it was lost
+        api.tree.focus()             -- Finally refocus on tree if it was lost
     end
 
     local function opts(desc)

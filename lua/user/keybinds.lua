@@ -13,14 +13,18 @@ lvim.keys.visual_block_mode["K"] = false     --
 lvim.keys.normal_mode["<C-8>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<C-7>"] = ":BufferLineCyclePrev<CR>"
 
-lvim.builtin.terminal.direction = "horizontal"
-lvim.builtin.terminal.open_mapping = "<leader>tq"
-lvim.builtin.which_key.mappings["t"] = "Terminal"
-lvim.builtin.terminal.execs = {
-    { nil, "<leader>tw", "float terminal",      "float",    nil },
-    { nil, "<leader>te", "wertykalny terminal", "vertical", 0.3 },
-}
 lvim.builtin.terminal.insert_mode = false
+
+lvim.builtin.terminal.direction = "horizontal"
+lvim.builtin.which_key.mappings["t"] = "Terminal"
+lvim.builtin.which_key.mappings["t"] = {
+    name = "Terminal",
+    q = { ':exe 1 . "ToggleTerm"<CR>', 'term1' },
+    w = { ':exe 2 . "ToggleTerm"<CR>', 'term2' },
+    e = { ':exe 3 . "ToggleTerm"<CR>', 'term3' },
+}
+
+
 
 
 -- w Wezterm (i VSCodium) masz Shift + Ctrl + Up/Down/Left/Right arrow
@@ -50,3 +54,6 @@ lvim.keys.normal_mode["<C-d>"] = "4jzz"
 
 lvim.keys.visual_block_mode["J"] = ":m '>+1<CR>gv=gv"
 lvim.keys.visual_block_mode["K"] = ":m '<-2<CR>gv=gv"
+
+
+lvim.keys.insert_mode["<C-i>"] = lvim.keys.insert_mode["<C-Space>"]
