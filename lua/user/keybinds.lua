@@ -10,20 +10,32 @@ lvim.keys.visual_block_mode["K"] = false     --
 -----------------------------------------------
 
 
+
+local cmp = require('cmp')
+lvim.builtin.cmp.mapping['<C-i>'] = cmp.mapping.complete()
+
 lvim.keys.normal_mode["<C-8>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<C-7>"] = ":BufferLineCyclePrev<CR>"
 
 lvim.builtin.terminal.insert_mode = false
 
 lvim.builtin.terminal.direction = "horizontal"
-lvim.builtin.which_key.mappings["t"] = "Terminal"
 lvim.builtin.which_key.mappings["t"] = {
     name = "Terminal",
     q = { ':exe 1 . "ToggleTerm"<CR>', 'term1' },
     w = { ':exe 2 . "ToggleTerm"<CR>', 'term2' },
     e = { ':exe 3 . "ToggleTerm"<CR>', 'term3' },
+    r = { ':1TermExec cmd="cargo run"<CR>', 'cargo run on term1' },
+    t = { ':1TermExec cmd="npm run dev"<CR>', 'npm run dev on term1' },
+    c = { ':1TermExec cmd=<C-c>', 'cancel term1' },
 }
 
+lvim.builtin.which_key.mappings["z"] = {
+    name = "zen",
+    m = { ":ZenMode<CR>", "Zen Mode" },
+}
+
+lvim.builtin.which_key.mappings["l"].t = { ":LspRestart<CR>", "restart LSP" }
 
 
 

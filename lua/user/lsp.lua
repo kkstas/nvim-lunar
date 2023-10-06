@@ -1,6 +1,5 @@
-
 lvim.builtin.treesitter.ensure_installed = {
-    "rust", "toml", "lua",
+    "toml", "lua",
 }
 
 lvim.format_on_save.enabled = true
@@ -20,18 +19,4 @@ formatters.setup {
             "html",
             "json", "jsonc", "yaml", "markdown", "markdown.mdx", "graphql", "handlebars" },
     }
-}
--- ESLint
-local linters = require "lvim.lsp.null-ls.linters"
-linters.setup {
-    {
-        exe = "eslint",
-        filetypes = {
-            "javascriptreact",
-            "javascript",
-            "typescriptreact",
-            "typescript",
-            "vue",
-        },
-    },
 }

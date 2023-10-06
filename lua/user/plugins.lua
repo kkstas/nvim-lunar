@@ -1,11 +1,20 @@
 lvim.plugins = {
-    -- {
-    --     'npxbr/glow.nvim',
-    --     ft = { "markdown" }
-    --     --build = "yay -S glow"
-    -- },
     'tpope/vim-surround',
     'tpope/vim-repeat',
+    'simrat39/rust-tools.nvim',
+    {
+        "folke/zen-mode.nvim",
+        config = function()
+            require("zen-mode").setup {}
+        end
+    },
+    {
+        "folke/todo-comments.nvim",
+        event = "BufRead",
+        config = function()
+            require("todo-comments").setup()
+        end,
+    },
     {
         'windwp/nvim-ts-autotag',
         config = function()
@@ -42,7 +51,6 @@ lvim.plugins = {
             vim.keymap.del({ 'x', 'o' }, 'X')
         end,
     },
-
     {
         'mg979/vim-visual-multi',
         lazy = false,
@@ -53,7 +61,9 @@ lvim.plugins = {
             }
         end,
     },
-
+    "AlexvZyl/nordic.nvim",
     'navarasu/onedark.nvim',
     'EdenEast/nightfox.nvim',
+    'tomasiser/vim-code-dark',
+
 }

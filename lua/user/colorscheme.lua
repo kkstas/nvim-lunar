@@ -1,5 +1,54 @@
 lvim.transparent_window = true
-lvim.colorscheme = 'duskfox'
+-- lvim.colorscheme = 'duskfox'
+-- lvim.colorscheme = 'nordic'
+lvim.colorscheme = 'codedark'
+vim.g.codedark_transparent = 1
+
+
+if (lvim.colorscheme == 'nordic') then
+    local fg_dim_color = "#60728a"
+    -- local fg_dim_color = "#ff728a"
+    require("nordic").setup({
+        override = {
+            --- "LeapLabelPrimary", "LeapLabelSecondary", "LeapLabelSelected", "LeapMatch", "LeapBackdrop"
+            Visual = { bg = "#263536" },
+            Comment = { fg = fg_dim_color },
+            NvimTreeRootFolder = { fg = fg_dim_color },
+            NvimTreeGitDirty = { fg = fg_dim_color },
+            NvimTreeGitNew = { fg = fg_dim_color },
+            NvimTreeGitDeleted = { fg = fg_dim_color },
+            NvimTreeGitStaged = { fg = fg_dim_color },
+            NvimTreeIndentMarker = { fg = fg_dim_color },
+
+
+            Cursor = {
+                bg = "#eb6e46",
+                fg = "#000000",
+                bold = true,
+            },
+
+            LeapLabelPrimary = {
+                fg = "#eb6e46",
+                bg = "NONE",
+                bold = false,
+                italic = true,
+            },
+
+            MatchParen = {
+                fg = "#EBCB8B",
+                bold = true,
+                sp = "#EBCB8B"
+
+            }
+        },
+
+        theme = "nordic", -- onedark | nordic
+        leap = {
+            dim_backdrop = true,
+        },
+        transparent_bg = true,
+    })
+end
 
 if (lvim.colorscheme == 'onedark') then
     require('onedark').setup({

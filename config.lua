@@ -5,8 +5,10 @@
 
 reload("user.colorscheme")
 reload("user.lsp")
+reload("user.autocommands")
 reload("user.nvimtree")
 reload("user.options")
 reload("user.plugins")
 reload("user.neovide")
 reload("user.keybinds")
+reload("user.rust")

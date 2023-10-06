@@ -14,5 +14,8 @@ lvim.builtin.alpha.dashboard.section.header.val = {
     "    yss{ --> otocz zawartość linii curly bracketem",
     "yss<div> --> otocz zawartość linii <divem>",
     '    cst" --> zamień taga na znak  `"`      ',
-    "  S<div> --> otocz zawartość <divem> (w line visual mode V)"
+    "  S<div> --> otocz zawartość <divem> (w line visual mode V)",
+    " ",
+    "      zt --> shift current line to top of screen",
+    "      zb --> shift current line to bottom of screen"
 }

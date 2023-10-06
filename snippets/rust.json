@@ -1,0 +1,12 @@
+{
+    "println!(": {
+        "prefix": "p",
+        "body": ["println!("],
+        "description": "println!("
+    },
+    "String::from(": {
+        "prefix": "S",
+        "body": ["String::from(\""],
+        "description": "String::from("
+    }
+}
