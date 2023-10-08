@@ -3,7 +3,7 @@ if vim.g.neovide then
     -- vim.o.guifont = "JetBrainsMono_Nerd_Font_Propo:h15:i"
     -- vim.o.guifont = "JetBrainsMono_Nerd_Font_Propo:h14"
     -- vim.o.guifont = "M+CodeLatx Nerd Font Mono:h17"
-    vim.o.guifont = "M+CodeLatx Nerd Font Propo:h14.5"
+    vim.o.guifont = "M+CodeLatx Nerd Font Propo:h13.5"
     -- vim.o.guifont = "Hack_Nerd_Font:h15"
     -- vim.o.guifont = "VictorMono Nerd Font:h15"
 

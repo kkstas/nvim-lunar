@@ -4,6 +4,8 @@ vim.opt.shiftwidth = 4
 vim.opt.sidescrolloff = 15
 vim.opt.scrolloff = 10
 
+vim.opt.completeopt = "menuone,noselect"
+
 lvim.builtin.alpha.dashboard.section.header.val = {
     "    __                          _    ___         ",
     "   / /   __  ______  ____ _____| |  / (_)___ ___ ",
@@ -19,3 +21,11 @@ lvim.builtin.alpha.dashboard.section.header.val = {
     "      zt --> shift current line to top of screen",
     "      zb --> shift current line to bottom of screen"
 }
+
+
+-- for nvim-ufo folds
+
+vim.o.foldcolumn = '1'
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
