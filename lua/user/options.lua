@@ -5,6 +5,7 @@ vim.opt.sidescrolloff = 15
 vim.opt.scrolloff = 10
 
 vim.opt.completeopt = "menuone,noselect"
+lvim.builtin.autopairs.disable_in_visualblock = true
 
 lvim.builtin.alpha.dashboard.section.header.val = {
     "    __                          _    ___         ",

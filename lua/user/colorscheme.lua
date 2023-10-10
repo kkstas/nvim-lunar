@@ -15,6 +15,9 @@ if (lvim.colorscheme == 'nordic') then
     require("nordic").setup({
         override = {
 
+            FoldColumn = { bg = "none", fg = "#434C5E" },
+            Folded = { bg = "none" },
+            -- Folded = { bg = "#242933" },
 
             Search = { bg = "#30425a", bold = false },
             --- "LeapLabelPrimary", "LeapLabelSecondary", "LeapLabelSelected", "LeapMatch", "LeapBackdrop"

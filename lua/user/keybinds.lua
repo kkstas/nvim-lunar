@@ -9,6 +9,19 @@ lvim.keys.visual_block_mode["J"] = false     --
 lvim.keys.visual_block_mode["K"] = false     --
 -----------------------------------------------
 
+lvim.lsp.buffer_mappings.normal_mode["J"] = {
+    function()
+        local float = vim.diagnostic.config().float
+
+        if float then
+            local config = type(float) == "table" and float or {}
+            config.scope = "line"
+
+            vim.diagnostic.open_float(config)
+        end
+    end,
+    "Show line diagnostics",
+}
 
 
 -- dla foldów z nvim-ufo
@@ -73,5 +86,3 @@ lvim.keys.normal_mode["<C-d>"] = "4jzz"
 
 lvim.keys.visual_block_mode["J"] = ":m '>+1<CR>gv=gv"
 lvim.keys.visual_block_mode["K"] = ":m '<-2<CR>gv=gv"
-
-lvim.keys.insert_mode["<C-i>"] = lvim.keys.insert_mode["<C-Space>"]
