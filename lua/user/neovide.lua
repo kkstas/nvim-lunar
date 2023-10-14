@@ -1,9 +1,9 @@
 if vim.g.neovide then
     -- vim.o.guifont = "JetBrainsMono_Nerd_Font:h17"
     -- vim.o.guifont = "JetBrainsMono_Nerd_Font_Propo:h15:i"
-    -- vim.o.guifont = "JetBrainsMono_Nerd_Font_Propo:h14"
+    vim.o.guifont = "JetBrainsMono_Nerd_Font_Propo:h14"
     -- vim.o.guifont = "M+CodeLatx Nerd Font Mono:h17"
-    vim.o.guifont = "M+CodeLatx Nerd Font Propo:h13.5"
+    -- vim.o.guifont = "M+CodeLatx Nerd Font Propo:h13.5"
     -- vim.o.guifont = "Hack_Nerd_Font:h15"
     -- vim.o.guifont = "VictorMono Nerd Font:h15"
 
@@ -36,23 +36,18 @@ if vim.g.neovide then
     vim.g.neovide_transparency = 0
     vim.g.transparency = 1
 
+    vim.g.neovide_background_color = "#191b1f" .. alpha()
     -- vim.g.neovide_background_color = "#11171c" .. alpha()
     -- vim.g.neovide_background_color = "#121319" .. alpha()
     -- vim.g.neovide_background_color = "#12151b" .. alpha()
-    vim.g.neovide_background_color = "#21262e" .. alpha()
+    -- vim.g.neovide_background_color = "#21262e" .. alpha()
     -- vim.g.neovide_background_color = "#1c2128" .. alpha()
 
+
     --
-    vim.g.neovide_scroll_animation_length = 0.9
     vim.g.neovide_input_macos_alt_is_meta = false
     vim.g.neovide_confirm_quit = true
     vim.g.neovide_cursor_antialiasing = true
-    vim.g.neovide_cursor_animate_in_insert_mode = true
-
-    vim.g.neovide_cursor_vfx_mode = "sonicboom"
-
-    vim.opt.linespace = 4
-
 
     vim.g.neovie_remember_window_size = false
     vim.g.neovide_hide_mouse_when_typing = true
@@ -61,4 +56,11 @@ if vim.g.neovide then
     vim.g.neovide_padding_bottom = 0
     vim.g.neovide_padding_right = 0
     vim.g.neovide_padding_left = 0
+
+    -- animations --
+    vim.g.neovide_cursor_animate_command_line = true
+    vim.g.neovide_cursor_trail_size = 0.3
+    vim.g.neovide_cursor_vfx_mode = "sonicboom"
+    vim.g.neovide_cursor_animate_in_insert_mode = true
+    vim.g.neovide_cursor_animation_length = 0.13
 end

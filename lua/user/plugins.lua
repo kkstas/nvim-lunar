@@ -91,5 +91,14 @@ lvim.plugins = {
     'EdenEast/nightfox.nvim',
     'tomasiser/vim-code-dark',
     'christianchiarulli/nvcode-color-schemes.vim',
-    -- { 'folke/tokyonight.nvim', lazy = false, piority = 1000, opts = {} }
+    {
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
+    },
+    'sainnhe/sonokai',
+    'shaunsingh/nord.nvim'
+
+
 }
