@@ -1,12 +1,16 @@
 {
     "println!(": {
         "prefix": "p",
-        "body": ["println!(\"${1:content}\", ${2:variable});"],
+        "body": [
+            "println!(\"${1:content}\", ${2:variable});${3}"
+        ],
         "description": "println!"
     },
     "String::from(": {
         "prefix": "S",
-        "body": ["String::from(\"${1:content}\");"],
-        "description": "String::from(\"\");"
+        "body": [
+            "String::from(${1:content})${2}"
+        ],
+        "description": "String::from()"
     }
 }
