@@ -98,7 +98,6 @@ lvim.plugins = {
         opts = {},
     },
     'sainnhe/sonokai',
-    'shaunsingh/nord.nvim'
-
+    'projekt0n/github-nvim-theme'
 
 }

@@ -7,7 +7,8 @@ lvim.colorscheme = 'nordic'
 -- lvim.colorscheme = 'tokyonight-storm'
 -- lvim.colorscheme = 'tokyonight-night'
 -- lvim.colorscheme = 'sonokai'
--- lvim.colorscheme = 'nord'
+-- lvim.colorscheme = 'github_dark'
+-- lvim.colorscheme = 'github_dark_colorblind'
 
 if (lvim.colorscheme == 'sonokai') then
     -- vim.g.sonokai_style = 'andromeda'
@@ -23,31 +24,29 @@ if (lvim.colorscheme == 'nordic') then
     local fg_dim_color = "#60728a"
 
     require("nordic").setup({
+
+
         override = {
 
-            -- markdownH2 = { fg = "#ff0000" },
-            -- ["@text.emphasis"] = { fg = "#E7C173" },
-            ["@text.emphasis"] = { fg = "#E7C173" },
-            -- ["@text.strong"] = { fg = "#CB775D", bold = true },
-            -- ["@text.strong"] = { fg = "#C5727A", bold = true },
-            -- ["@text.strong"] = { fg = "#97B67C", bold = true },
-            ["@text.strong"] = { fg = "#80b3b2", bold = true },
+            WinSeparator         = { bg = "none", fg = "#263536" },
 
+            ["@text.emphasis"]   = { fg = "#E7C173" },
+            ["@text.strong"]     = { fg = "#80b3b2", bold = true },
 
-            FoldColumn = { bg = "none", fg = "#434C5E" },
-            Folded = { bg = "none" },
+            FoldColumn           = { bg = "none", fg = "#434C5E" },
+            Folded               = { bg = "none" },
             -- Folded = { bg = "#242933" },
 
-            Search = { bg = "#30425a", bold = false },
+            Search               = { bg = "#30425a", bold = false },
             --- "LeapLabelPrimary", "LeapLabelSecondary", "LeapLabelSelected", "LeapMatch", "LeapBackdrop"
-            Visual = { bg = "#263536" },
+            Visual               = { bg = "#263536" },
             -- Visual = { bg = "#263536" },
-            Comment = { fg = fg_dim_color },
-            NvimTreeRootFolder = { fg = fg_dim_color },
-            NvimTreeGitDirty = { fg = fg_dim_color },
-            NvimTreeGitNew = { fg = fg_dim_color },
-            NvimTreeGitDeleted = { fg = fg_dim_color },
-            NvimTreeGitStaged = { fg = fg_dim_color },
+            Comment              = { fg = fg_dim_color },
+            NvimTreeRootFolder   = { fg = fg_dim_color },
+            NvimTreeGitDirty     = { fg = fg_dim_color },
+            NvimTreeGitNew       = { fg = fg_dim_color },
+            NvimTreeGitDeleted   = { fg = fg_dim_color },
+            NvimTreeGitStaged    = { fg = fg_dim_color },
             NvimTreeIndentMarker = { fg = fg_dim_color },
 
 
@@ -99,7 +98,7 @@ then
             -- Compiled file's destination location
             -- compile_path = vim.fn.stdpath("cache") .. "/nightfox",
             -- compile_file_suffix = "_compiled", -- Compiled file suffix
-            transparent = false,    -- Disable setting background
+            transparent = true,     -- Disable setting background
             terminal_colors = true, -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
             dim_inactive = false,   -- Non focused panes set to alternative background
             module_default = true,  -- Default enable value for modules
@@ -139,6 +138,9 @@ then
             }
         },
         groups = {
+            duskfox = {
+                CursorLine = { bg = "#14171c" },
+            },
             terafox = {
                 CursorLine                 = { bg = "#22272c" },
                 LineNr                     = { fg = "#22272c" },

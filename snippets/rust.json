@@ -2,14 +2,14 @@
     "println!(": {
         "prefix": "p",
         "body": [
-            "println!(\"${1:content}\", ${2:variable});${3}"
+            "println!(\"${1}\"${2});${3}"
         ],
         "description": "println!"
     },
     "String::from(": {
         "prefix": "S",
         "body": [
-            "String::from(${1:content})${2}"
+            "String::from(${1})${2}"
         ],
         "description": "String::from()"
     }
