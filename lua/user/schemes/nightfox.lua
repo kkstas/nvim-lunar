@@ -1,0 +1,70 @@
+require('nightfox').setup({
+    options = {
+        -- Compiled file's destination location
+        -- compile_path = vim.fn.stdpath("cache") .. "/nightfox",
+        -- compile_file_suffix = "_compiled", -- Compiled file suffix
+        transparent = true,     -- Disable setting background
+        terminal_colors = true, -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
+        dim_inactive = false,   -- Non focused panes set to alternative background
+        module_default = true,  -- Default enable value for modules
+        -- colorblind = {
+        --     enable = false, -- Enable colorblind support
+        --     simulate_only = false, -- Only show simulated colorblind colors and not diff shifted
+        --     severity = {
+        --         protan = 0, -- Severity [0,1] for protan (red)
+        --         deutan = 0, -- Severity [0,1] for deutan (green)
+        --         tritan = 0, -- Severity [0,1] for tritan (blue)
+        --     },
+        -- },
+        styles = { -- Style to be applied to different syntax groups
+            -- comments = "NONE", -- Value is any valid attr-list value `:help attr-list`
+            -- conditionals = "NONE",
+            -- constants = "NONE",
+            -- functions = "NONE",
+            -- keywords = "NONE",
+            -- numbers = "NONE",
+            -- operators = "NONE",
+            -- strings = "NONE",
+            -- types = "NONE",
+            -- variables = "NONE",
+        },
+        -- inverse = { -- Inverse highlight for different types
+        --     match_paren = false,
+        --     visual = false,
+        --     search = false,
+        -- },
+        -- modules = { -- List of various plugins and additional options
+        --     -- ...
+        -- },
+    },
+    palettes = {
+        terafox = {
+            comment = "#48526a",
+        }
+    },
+    groups = {
+        duskfox = {
+            CursorLine = { bg = "#14171c" },
+        },
+        terafox = {
+            CursorLine                 = { bg = "#22272c" },
+            LineNr                     = { fg = "#22272c" },
+            -- IntentBlanklineChar         = { fg = "#ff0000", bg = "#0000ff" },
+            -- IndentBlanklineChar         = { fg = "#00ff00", bg = "#0000ff" },
+            IndentBlanklineContextChar = { fg = "#d78b6c", },
+            -- IndentBlanklineContextStart = { fg = "#ff0000", bg = "#0000ff" },
+            -- IndentBlanklineIndent6      = { fg = "#ff0000", bg = "#0000ff" },
+            -- IndentBlanklineIndent5      = { fg = "#ff0000", bg = "#0000ff" },
+            -- IndentBlanklineIndent4      = { fg = "#ff0000", bg = "#0000ff" },
+            -- IndentBlanklineIndent3      = { fg = "#ff0000", bg = "#0000ff" },
+            -- IndentBlanklineIndent2      = { fg = "#ff0000", bg = "#0000ff" },
+            -- IndentBlanklineIndent1      = { fg = "#ff0000", bg = "#0000ff" },
+
+        }
+    }
+
+    -- palettes = {},
+    -- specs = {},
+    -- groups = {},
+})
+require('nightfox').load()
