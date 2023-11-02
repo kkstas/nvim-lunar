@@ -5,6 +5,7 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
     end,
 })
 
+
 lvim.autocommands = {
     {
         "BufEnter",               -- see `:h autocmd-events`
