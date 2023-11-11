@@ -11,7 +11,7 @@ formatters.setup {
     {
         name = "prettier",
         args = {
-            "--print-width=100",
+            "--print-width=85",
             "--tab-width=2",
             "--semi=true",
             "--trailing-comma=es5",

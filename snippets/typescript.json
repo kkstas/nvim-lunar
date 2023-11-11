@@ -1,0 +1,7 @@
+{
+  "console.log()": {
+    "prefix": "c",
+    "body": ["console.log(${1})${2}"],
+    "description": "console.log()"
+  }
+}
