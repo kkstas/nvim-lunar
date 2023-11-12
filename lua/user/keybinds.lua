@@ -31,8 +31,25 @@ vim.keymap.set('n', 'zr', require('ufo').openFoldsExceptKinds)
 vim.keymap.set('n', 'zm', require('ufo').closeFoldsWith) -- closeAllFolds == closeFoldsWith(0)
 
 lvim.builtin.which_key.mappings["v"] = { ":lua require('ufo').peekFoldedLinesUnderCursor()<CR>", "Peek fold" }
+--
 
 
+-- ESC robi również :nohl
+lvim.keys.normal_mode["<ESC>"] = ":nohlsearch<Bar>:echo<CR>"
+--
+
+-- numToStr/Navigator.nvim <-> WezTerm - przechodzenie między panes/splits przy <C-hjkl>
+lvim.keys.normal_mode["<C-h>"] = "<CMD>NavigatorLeft<CR>"
+lvim.keys.term_mode["<C-h>"] = "<CMD>NavigatorLeft<CR>"
+lvim.keys.normal_mode["<C-j>"] = "<CMD>NavigatorDown<CR>"
+lvim.keys.term_mode["<C-j>"] = "<CMD>NavigatorDown<CR>"
+lvim.keys.normal_mode["<C-k>"] = "<CMD>NavigatorUp<CR>"
+lvim.keys.term_mode["<C-k>"] = "<CMD>NavigatorUp<CR>"
+lvim.keys.normal_mode["<C-l>"] = "<CMD>NavigatorRight<CR>"
+lvim.keys.term_mode["<C-l>"] = "<CMD>NavigatorRight<CR>"
+lvim.keys.normal_mode["<C-p>"] = "<CMD>NavigatorPrevious<CR>"
+lvim.keys.term_mode["<C-p>"] = "<CMD>NavigatorPrevious<CR>"
+--
 
 local cmp = require("cmp")
 lvim.builtin.cmp.mapping["<C-i>"] = cmp.mapping.complete()
@@ -53,6 +70,10 @@ lvim.builtin.which_key.mappings["t"] = {
     t = { ':1TermExec cmd="npm run dev"<CR>', "npm run dev on term1" },
     c = { ":1TermExec cmd=<C-c>", "cancel term1" },
 }
+
+lvim.keys.normal_mode["<C-t>"] = ': exe 1 . "ToggleTerm"<CR>'
+lvim.keys.term_mode["<C-t>"] = ': exe 1 . "ToggleTerm"<CR>'
+
 
 lvim.builtin.which_key.mappings["z"] = {
     name = "zen",

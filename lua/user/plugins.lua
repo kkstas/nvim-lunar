@@ -2,6 +2,14 @@ lvim.plugins = {
     'tpope/vim-surround',
     'tpope/vim-repeat',
     'simrat39/rust-tools.nvim',
+
+    {
+        'numToStr/Navigator.nvim',
+        config = function()
+            require('Navigator').setup()
+        end
+    },
+
     {
         'kevinhwang91/nvim-ufo',
         dependencies = { 'kevinhwang91/promise-async' },
