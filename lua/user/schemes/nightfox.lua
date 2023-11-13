@@ -47,8 +47,9 @@ require('nightfox').setup({
             CursorLine = { bg = "#14171c" },
         },
         terafox = {
-            CursorLine                 = { bg = "#22272c" },
+            CursorLine                 = { bg = "#111416" },
             LineNr                     = { fg = "#22272c" },
+            CursorLineNr               = { style = "NONE" },
             -- IntentBlanklineChar         = { fg = "#ff0000", bg = "#0000ff" },
             -- IndentBlanklineChar         = { fg = "#00ff00", bg = "#0000ff" },
             IndentBlanklineContextChar = { fg = "#d78b6c", },

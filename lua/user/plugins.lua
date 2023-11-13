@@ -2,6 +2,7 @@ lvim.plugins = {
     'tpope/vim-surround',
     'tpope/vim-repeat',
     'simrat39/rust-tools.nvim',
+    "lunarvim/colorschemes",
 
     {
         'numToStr/Navigator.nvim',

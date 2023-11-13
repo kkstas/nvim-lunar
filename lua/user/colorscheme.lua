@@ -1,8 +1,8 @@
 lvim.transparent_window = true
 
 -- lvim.colorscheme = 'duskfox'
--- lvim.colorscheme = 'terafox'
-lvim.colorscheme = 'nordic'
+lvim.colorscheme = 'terafox'
+-- lvim.colorscheme = 'nordic'
 -- lvim.colorscheme = 'codedark'
 -- lvim.colorscheme = 'nvcode'
 -- lvim.colorscheme = 'tokyonight-storm'
