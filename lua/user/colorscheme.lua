@@ -1,31 +1,41 @@
 lvim.transparent_window = true
 
--- lvim.colorscheme = 'duskfox'
-lvim.colorscheme = 'terafox'
--- lvim.colorscheme = 'nordic'
--- lvim.colorscheme = 'codedark'
--- lvim.colorscheme = 'nvcode'
--- lvim.colorscheme = 'tokyonight-storm'
--- lvim.colorscheme = 'tokyonight-night'
--- lvim.colorscheme = 'sonokai'
--- lvim.colorscheme = 'github_dark'
--- lvim.colorscheme = 'github_dark_colorblind'
 
-if (lvim.colorscheme == 'sonokai') then
+local scheme = 'kanagawa' -- lvim.colorscheme jest wywoływane na końcu tego pliku, ponieważ
+---------------------------- niektóre colorschemes wymagają najpierw ustawienia configu
+
+-- local scheme = 'duskfox'
+-- local scheme = 'terafox'
+-- local scheme = 'nordic'
+-- local scheme = 'codedark'
+-- local scheme = 'nvcode'
+-- local scheme = 'tokyonight-storm'
+-- local scheme = 'tokyonight-night'
+-- local scheme = 'sonokai'
+-- local scheme = 'github_dark'
+-- local scheme = 'github_dark_colorblind'
+
+if (scheme == 'kanagawa') then
+    require('user.schemes.kanagawa')
+    scheme = 'kanagawa'
+end
+
+
+if (scheme == 'sonokai') then
     -- vim.g.sonokai_style = 'andromeda'
     vim.g.sonokai_style = 'atlantis'
 end
 
-if (lvim.colorscheme == 'codedark') then
+if (scheme == 'codedark') then
     vim.g.codedark_transparent = 1
 end
 
 
-if (lvim.colorscheme == 'nordic') then
-    require("user.schemes.nordic")
+if (scheme == 'nordic') then
+    require('user.schemes.nordic')
 end
 
-if (lvim.colorscheme == 'onedark') then
+if (scheme == 'onedark') then
     require('onedark').setup({
         style = 'warmer'
     })
@@ -34,14 +44,16 @@ end
 
 
 -- nightfox theme settings
-if (lvim.colorscheme == "duskfox")
-    or (lvim.colorscheme == "nightfox")
-    or (lvim.colorscheme == "nordfox")
-    or (lvim.colorscheme == "terafox")
-    or (lvim.colorscheme == "carbonfox")
+if (scheme == "duskfox")
+    or (scheme == "nightfox")
+    or (scheme == "nordfox")
+    or (scheme == "terafox")
+    or (scheme == "carbonfox")
 then
     require("user.schemes.nightfox")
 end
+
+lvim.colorscheme = scheme
 
 -- -- Gdybyś chciał zmienić wygląd lualine (np. transparent background):
 -- local colors = {

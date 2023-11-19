@@ -7,7 +7,7 @@ vim.opt.shiftwidth = 4
 vim.opt.sidescrolloff = 15
 vim.opt.scrolloff = 10
 
-vim.opt.number = false
+vim.opt.number = true
 
 vim.opt.completeopt = "menuone,noselect"
 lvim.builtin.autopairs.disable_in_visualblock = true

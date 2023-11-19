@@ -107,6 +107,7 @@ lvim.plugins = {
         opts = {},
     },
     'sainnhe/sonokai',
-    'projekt0n/github-nvim-theme'
+    'projekt0n/github-nvim-theme',
+    "rebelot/kanagawa.nvim"
 
 }

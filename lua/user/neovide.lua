@@ -1,9 +1,9 @@
 if vim.g.neovide then
     -- vim.o.guifont = "JetBrainsMono_Nerd_Font:h13"
     -- vim.o.guifont = "JetBrainsMono_Nerd_Font_Propo:h15:i"
-    -- vim.o.guifont = "JetBrainsMono Nerd Font Propo:h12.5"
+    vim.o.guifont = "JetBrainsMono Nerd Font Propo:h12.5"
     -- vim.o.guifont = "M+CodeLatx Nerd Font Mono:h13"
-    vim.o.guifont = "M+CodeLatx Nerd Font Propo:h13"
+    -- vim.o.guifont = "M+CodeLatx Nerd Font Propo:h13"
     -- vim.o.guifont = "VictorMono Nerd Font:h14:w1"
     -- vim.o.guifont = "VictorMono Nerd Font Propo:h14:w1.5"
     -- vim.o.guifont = "Lilex Nerd Font Mono:h13"
