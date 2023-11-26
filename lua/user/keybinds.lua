@@ -9,6 +9,18 @@ lvim.keys.visual_block_mode["J"] = false     --
 lvim.keys.visual_block_mode["K"] = false     --
 -----------------------------------------------
 
+-- TERMINAL -----------------------------------
+lvim.builtin.terminal.direction = "horizontal" -- żeby otwierał się w splicie w dolnej części, a nie np we float
+
+function _G.set_terminal_keymaps()
+    local opts = { buffer = 0 }
+    vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+end
+
+vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
+
+-----------------------------------------------
+
 
 lvim.lsp.buffer_mappings.normal_mode["J"] = {
     function()
@@ -59,9 +71,7 @@ lvim.builtin.cmp.mapping["<C-;>"] = cmp.mapping.complete()
 lvim.keys.normal_mode["<C-8>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<C-7>"] = ":BufferLineCyclePrev<CR>"
 
-lvim.builtin.terminal.insert_mode = false
 
-lvim.builtin.terminal.direction = "horizontal"
 lvim.builtin.which_key.mappings["t"] = {
     name = "Terminal",
     q = { ':exe 1 . "ToggleTerm"<CR>', "term1" },
