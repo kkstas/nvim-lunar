@@ -1,0 +1,9 @@
+{
+    "p": {
+        "prefix": "p",
+        "body": [
+            "fmt.Println(${1})${2}"
+        ],
+        "description": "fmt.Println"
+    }
+}

@@ -1,22 +1,6 @@
 if vim.g.neovide then
-    -- vim.o.guifont = "JetBrainsMono_Nerd_Font:h13"
-    -- vim.o.guifont = "JetBrainsMono_Nerd_Font_Propo:h15:i"
-    vim.o.guifont = "JetBrainsMono Nerd Font Propo:h12.5"
-    -- vim.o.guifont = "M+CodeLatx Nerd Font Mono:h13"
-    -- vim.o.guifont = "M+CodeLatx Nerd Font Propo:h13"
-    -- vim.o.guifont = "VictorMono Nerd Font:h14:w1"
-    -- vim.o.guifont = "VictorMono Nerd Font Propo:h14:w1.5"
-    -- vim.o.guifont = "Lilex Nerd Font Mono:h13"
-    -- vim.o.guifont = "Maple Mono:h13"
-    -- vim.o.guifont = "Hasklug Nerd Font Propo:h13"
-    -- vim.o.guifont = "Lekton Nerd Font:h16:w1"
-    -- vim.opt.linespace = 0
-    -- vim.o.guifont = "Monoid Nerd Font:h14"
-    -- vim.o.guifont = "SauceCodePro Nerd Font Propo:h14"
-    -- vim.o.guifont = "mononoki:h15"
-    -- vim.o.guifont = "Hurmit Nerd Font Mono:h14"
-    -- vim.o.guifont = "Courier Prime Code:h14"
-    -- -> == != <= <->
+    vim.o.guifont = "M+CodeLatx Nerd Font Propo:h12.5"
+
     vim.g.neovide_theme = 'auto'
 
     vim.g.neovide_scale_factor = 1.0
@@ -48,17 +32,8 @@ if vim.g.neovide then
     vim.g.neovide_transparency = 0
     vim.g.transparency = 1
 
-
-    vim.g.neovide_background_color = "#181d25" .. alpha() -- ten kolor jest kolorem tła dolnego paska w nordic colorsheme
-    -- vim.g.neovide_background_color = "#191b1f" .. alpha()
-    -- vim.g.neovide_background_color = "#11171c" .. alpha()
-    -- vim.g.neovide_background_color = "#121319" .. alpha()
-    -- vim.g.neovide_background_color = "#12151b" .. alpha()
-    -- vim.g.neovide_background_color = "#21262e" .. alpha()
-    -- vim.g.neovide_background_color = "#1c2128" .. alpha()
-
-    -- vim.g.neovide_background_color = "#0d1117" .. alpha()
-    -- vim.g.neovide_background_color = "#161b22" .. alpha()
+    vim.g.neovide_background_color = "#1a1e24" .. alpha()
+    -- vim.g.neovide_background_color = "#1c1e22" .. alpha()
 
     -- vim.g.neovide_background_color = "#000000" .. alpha()
     if vim.g.neovide_background_color == "#000000" .. alpha() then

@@ -1,12 +1,12 @@
 lvim.transparent_window = true
 
 
-local scheme = 'kanagawa' -- lvim.colorscheme jest wywoływane na końcu tego pliku, ponieważ
+-- local scheme = 'kanagawa' -- lvim.colorscheme jest wywoływane na końcu tego pliku, ponieważ
 ---------------------------- niektóre colorschemes wymagają najpierw ustawienia configu
 
 -- local scheme = 'duskfox'
 -- local scheme = 'terafox'
--- local scheme = 'nordic'
+local scheme = 'nordic'
 -- local scheme = 'codedark'
 -- local scheme = 'nvcode'
 -- local scheme = 'tokyonight-storm'

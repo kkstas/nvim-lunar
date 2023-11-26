@@ -7,9 +7,11 @@ vim.opt.shiftwidth = 4
 vim.opt.sidescrolloff = 15
 vim.opt.scrolloff = 10
 
-vim.opt.number = true
 
-vim.opt.completeopt = "menuone,noselect"
+lvim.builtin.cmp.preselect = require('cmp').PreselectMode.None
+
+lvim.builtin.indentlines.options.show_first_indent_level = false
+
 lvim.builtin.autopairs.disable_in_visualblock = true
 
 lvim.builtin.nvimtree.setup.view.float.enable = true
@@ -29,11 +31,3 @@ lvim.builtin.alpha.dashboard.section.header.val = {
     "      zt --> shift current line to top of screen",
     "      zb --> shift current line to bottom of screen"
 }
-
-
--- for nvim-ufo folds
-
-vim.o.foldcolumn = '1'
-vim.o.foldlevel = 99
-vim.o.foldlevelstart = 99
-vim.o.foldenable = true

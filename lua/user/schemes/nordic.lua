@@ -27,7 +27,7 @@ require("nordic").setup({
         NvimTreeIndentMarker = { fg = fg_dim_color },
 
 
-        Cursor = {
+        Cursor           = {
             bg = "#eb6e46",
             fg = "#000000",
             bold = true,
@@ -40,7 +40,7 @@ require("nordic").setup({
             italic = true,
         },
 
-        MatchParen = {
+        MatchParen       = {
             fg = "#EBCB8B",
             bold = true,
             sp = "#EBCB8B",

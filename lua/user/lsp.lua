@@ -5,7 +5,6 @@ lvim.builtin.treesitter.ensure_installed = {
 lvim.format_on_save.enabled = true
 
 
-
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
     {

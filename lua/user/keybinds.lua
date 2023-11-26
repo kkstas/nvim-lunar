@@ -9,6 +9,7 @@ lvim.keys.visual_block_mode["J"] = false     --
 lvim.keys.visual_block_mode["K"] = false     --
 -----------------------------------------------
 
+
 lvim.lsp.buffer_mappings.normal_mode["J"] = {
     function()
         local float = vim.diagnostic.config().float
