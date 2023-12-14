@@ -14,7 +14,6 @@ lvim.builtin.indentlines.options.show_first_indent_level = false
 
 lvim.builtin.autopairs.disable_in_visualblock = true
 
-lvim.builtin.nvimtree.setup.view.float.enable = true
 
 lvim.builtin.alpha.dashboard.section.header.val = {
     "    __                          _    ___         ",
@@ -28,6 +27,16 @@ lvim.builtin.alpha.dashboard.section.header.val = {
     '    cst" --> zamień taga na znak  `"`      ',
     "  S<div> --> otocz zawartość <divem> (w line visual mode V)",
     " ",
-    "      zt --> shift current line to top of screen",
-    "      zb --> shift current line to bottom of screen"
+    "JUMP LIST:",
+    "   <C-i> --> go to next position in the 'jump list'",
+    "   <C-o> --> go to prev position in the 'jump list'",
+    ":ju[mps] --> view the 'jump list'",
+    " ",
+    "CHANGE LIST:",
+    "      g; --> go to prev position in the 'change list'",
+    "      g, --> go to next position in the 'change list'",
+    ":changes --> view the 'change list'",
+    " ",
+    "       * --> go to next matching word",
+    "       # --> go to prev matching word",
 }

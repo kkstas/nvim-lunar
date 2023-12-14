@@ -1,7 +1,16 @@
 {
-  "console.log()": {
-    "prefix": "c",
-    "body": ["console.log(${1})${2}"],
-    "description": "console.log()"
-  }
+    "console.log()": {
+        "prefix": "p",
+        "body": [
+            "console.log(${1})${2}"
+        ],
+        "description": "console.log()"
+    },
+    "console.log()": {
+        "prefix": "c",
+        "body": [
+            "console.log(${1})${2}"
+        ],
+        "description": "console.log()"
+    }
 }

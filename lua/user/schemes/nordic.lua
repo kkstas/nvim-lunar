@@ -44,7 +44,8 @@ require("nordic").setup({
             fg = "#EBCB8B",
             bold = true,
             sp = "#EBCB8B",
-        }
+        },
+
     },
 
     theme = "nordic", -- onedark | nordic

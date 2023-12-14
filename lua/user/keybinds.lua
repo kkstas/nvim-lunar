@@ -72,6 +72,8 @@ lvim.keys.normal_mode["<C-8>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<C-7>"] = ":BufferLineCyclePrev<CR>"
 
 
+lvim.builtin.which_key.mappings["f"] = { ":Telescope live_grep<CR>", "Telescope live_grep" }
+
 lvim.builtin.which_key.mappings["t"] = {
     name = "Terminal",
     q = { ':exe 1 . "ToggleTerm"<CR>', "term1" },
@@ -93,6 +95,16 @@ lvim.builtin.which_key.mappings["z"] = {
 
 lvim.builtin.which_key.mappings["l"].t = { ":LspRestart<CR>", "restart LSP" }
 
+------------------------------------------------------------
+-- Tu ustawiam keybindy LSP bo nie działają w przypadku Rust
+-- -- Go to definition
+lvim.keys.normal_mode["gd"] = vim.lsp.buf.definition
+-- -- Go to implementation
+lvim.keys.normal_mode["gD"] = vim.lsp.buf.implementation
+-- -- Go to references
+lvim.keys.normal_mode["gr"] = vim.lsp.buf.references
+------------------------------------------------------------
+
 -- w Wezterm (i VSCodium) masz Shift + Ctrl + Up/Down/Left/Right arrow
 -- na resize. Dlatego - żeby nie kolidował NVIM z Wezterm,
 -- tutaj resize jest za pomocą Shift + Arrows
@@ -113,8 +125,8 @@ lvim.builtin.which_key.mappings["w"] = {
     s = { ":split<CR>", "horizontal split" },
 }
 
-lvim.keys.normal_mode["<C-u>"] = "4kzz"
-lvim.keys.normal_mode["<C-d>"] = "4jzz"
+lvim.keys.normal_mode["<C-u>"] = "4k"
+lvim.keys.normal_mode["<C-d>"] = "4j"
 
 lvim.keys.visual_block_mode["J"] = ":m '>+1<CR>gv=gv"
 lvim.keys.visual_block_mode["K"] = ":m '<-2<CR>gv=gv"

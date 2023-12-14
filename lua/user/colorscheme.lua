@@ -14,10 +14,16 @@ local scheme = 'nordic'
 -- local scheme = 'sonokai'
 -- local scheme = 'github_dark'
 -- local scheme = 'github_dark_colorblind'
+-- local scheme = 'gruvbox-baby'
+
+-- if (scheme == 'gruvbox-baby') then
+-- require('user.schemes.gruvbox-baby')
+-- end
+
 
 if (scheme == 'kanagawa') then
     require('user.schemes.kanagawa')
-    scheme = 'kanagawa'
+    -- scheme = 'kanagawa'
 end
 
 

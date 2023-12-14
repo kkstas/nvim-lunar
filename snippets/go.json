@@ -5,5 +5,12 @@
             "fmt.Println(${1})${2}"
         ],
         "description": "fmt.Println"
+    },
+    "f": {
+        "prefix": "f",
+        "body": [
+            "fmt.Printf(${1})${2}"
+        ],
+        "description": "fmt.Printf"
     }
 }
