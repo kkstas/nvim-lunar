@@ -1,6 +1,6 @@
 if vim.g.neovide then
-    vim.o.guifont = "M+CodeLatx Nerd Font Propo:h13.0"
-    -- vim.o.guifont = "JetBrainsMono Nerd Font Propo:h12.5"
+    -- vim.o.guifont = "M+CodeLatx Nerd Font Propo:h13.0"
+    vim.o.guifont = "JetBrainsMono Nerd Font Propo:h14"
     -- vim.opt.linespace = 8
 
     vim.g.neovide_theme = 'auto'
@@ -35,8 +35,6 @@ if vim.g.neovide then
     vim.g.transparency = 1
 
     vim.g.neovide_background_color = "#12161c" .. alpha()
-    -- vim.g.neovide_background_color = "#1c1e22" .. alpha()
-    -- vim.g.neovide_background_color = "#0f181b" .. alpha()
 
     -- vim.g.neovide_background_color = "#000000" .. alpha()
     if vim.g.neovide_background_color == "#000000" .. alpha() then

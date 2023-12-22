@@ -1,4 +1,4 @@
-lvim.transparent_window = true
+lvim.transparent_window = false
 
 
 -- local scheme = 'kanagawa' -- lvim.colorscheme jest wywoływane na końcu tego pliku, ponieważ

@@ -2,7 +2,7 @@ lvim.builtin.treesitter.ensure_installed = {
     "toml", "lua",
 }
 
-lvim.format_on_save.enabled = true
+lvim.format_on_save.enabled = false
 
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
@@ -11,5 +11,8 @@ formatters.setup {
 
 -- local linters = require("lvim.lsp.null-ls.linters")
 -- linters.setup({
---     { command = "eslint", filetypes = { "javascript", "typescript", "javascriptreact", "typescriptreact", "css", "vue", "scss", "less", "html" } },
+--     {
+--         command = "eslint",
+--         filetypes = { "javascript", "typescript", "javascriptreact", "typescriptreact", "css", "vue", "scss", "less", "html" }
+--     },
 -- })

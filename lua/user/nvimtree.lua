@@ -36,6 +36,8 @@ local function my_on_attach(bufnr)
     vim.keymap.set("n", "L", vsplit_preview, opts("Vsplit Preview"))
 end
 
+
+
 lvim.builtin.nvimtree.setup.on_attach = my_on_attach
 lvim.builtin.nvimtree.setup.view.float.enable = true
 lvim.builtin.nvimtree.setup.view.float.open_win_config.width = 80

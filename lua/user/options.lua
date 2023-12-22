@@ -10,7 +10,8 @@ vim.opt.scrolloff = 10
 
 lvim.builtin.cmp.preselect = require('cmp').PreselectMode.None
 
-lvim.builtin.indentlines.options.show_first_indent_level = false
+-- lvim.builtin.indentlines.options.show_first_indent_level = false
+lvim.builtin.indentlines.active = false
 
 lvim.builtin.autopairs.disable_in_visualblock = true
 
