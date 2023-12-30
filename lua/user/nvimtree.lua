@@ -43,3 +43,7 @@ lvim.builtin.nvimtree.setup.view.float.enable = true
 lvim.builtin.nvimtree.setup.view.float.open_win_config.width = 80
 lvim.builtin.nvimtree.setup.view.float.open_win_config.height = 45
 lvim.builtin.nvimtree.setup.view.float.open_win_config.border = 'rounded'
+
+
+lvim.builtin.nvimtree.setup.filters.custom = {}
+

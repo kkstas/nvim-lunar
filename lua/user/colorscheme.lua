@@ -7,45 +7,35 @@ lvim.transparent_window = false
 -- local scheme = 'duskfox'
 -- local scheme = 'terafox'
 local scheme = 'nordic'
--- local scheme = 'codedark'
--- local scheme = 'nvcode'
 -- local scheme = 'tokyonight-storm'
 -- local scheme = 'tokyonight-night'
 -- local scheme = 'sonokai'
--- local scheme = 'github_dark'
--- local scheme = 'github_dark_colorblind'
--- local scheme = 'gruvbox-baby'
+-- local scheme = 'vscode'
 
--- if (scheme == 'gruvbox-baby') then
--- require('user.schemes.gruvbox-baby')
--- end
+if (scheme == 'vscode') then
+  require('user.schemes.vscode')
+end
 
 
 if (scheme == 'kanagawa') then
-    require('user.schemes.kanagawa')
-    -- scheme = 'kanagawa'
+  require('user.schemes.kanagawa')
 end
 
 
 if (scheme == 'sonokai') then
-    -- vim.g.sonokai_style = 'andromeda'
-    vim.g.sonokai_style = 'atlantis'
-end
-
-if (scheme == 'codedark') then
-    vim.g.codedark_transparent = 1
+  vim.g.sonokai_style = 'atlantis'
 end
 
 
 if (scheme == 'nordic') then
-    require('user.schemes.nordic')
+  require('user.schemes.nordic')
 end
 
 if (scheme == 'onedark') then
-    require('onedark').setup({
-        style = 'warmer'
-    })
-    require('onedark').load()
+  require('onedark').setup({
+    style = 'warmer'
+  })
+  require('onedark').load()
 end
 
 
@@ -56,7 +46,7 @@ if (scheme == "duskfox")
     or (scheme == "terafox")
     or (scheme == "carbonfox")
 then
-    require("user.schemes.nightfox")
+  require("user.schemes.nightfox")
 end
 
 lvim.colorscheme = scheme

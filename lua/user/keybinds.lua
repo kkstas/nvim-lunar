@@ -13,8 +13,8 @@ lvim.keys.visual_block_mode["K"] = false     --
 lvim.builtin.terminal.direction = "horizontal" -- żeby otwierał się w splicie w dolnej części, a nie np we float
 
 function _G.set_terminal_keymaps()
-    local opts = { buffer = 0 }
-    vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+  local opts = { buffer = 0 }
+  vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
 end
 
 vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
@@ -23,17 +23,17 @@ vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
 
 lvim.lsp.buffer_mappings.normal_mode["J"] = {
-    function()
-        local float = vim.diagnostic.config().float
+  function()
+    local float = vim.diagnostic.config().float
 
-        if float then
-            local config = type(float) == "table" and float or {}
-            config.scope = "line"
+    if float then
+      local config = type(float) == "table" and float or {}
+      config.scope = "line"
 
-            vim.diagnostic.open_float(config)
-        end
-    end,
-    "Show line diagnostics",
+      vim.diagnostic.open_float(config)
+    end
+  end,
+  "Show line diagnostics",
 }
 
 
@@ -66,7 +66,6 @@ lvim.keys.term_mode["<C-p>"] = "<CMD>NavigatorPrevious<CR>"
 
 local cmp = require("cmp")
 lvim.builtin.cmp.mapping["<C-i>"] = cmp.mapping.complete()
-lvim.builtin.cmp.mapping["<C-;>"] = cmp.mapping.complete()
 
 lvim.keys.normal_mode["<C-8>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<C-7>"] = ":BufferLineCyclePrev<CR>"
@@ -75,13 +74,13 @@ lvim.keys.normal_mode["<C-7>"] = ":BufferLineCyclePrev<CR>"
 lvim.builtin.which_key.mappings["f"] = { ":Telescope live_grep<CR>", "Telescope live_grep" }
 
 lvim.builtin.which_key.mappings["t"] = {
-    name = "Terminal",
-    q = { ':exe 1 . "ToggleTerm"<CR>', "term1" },
-    w = { ':exe 2 . "ToggleTerm"<CR>', "term2" },
-    e = { ':exe 3 . "ToggleTerm"<CR>', "term3" },
-    r = { ':1TermExec cmd="cargo run"<CR>', "cargo run on term1" },
-    t = { ':1TermExec cmd="npm run dev"<CR>', "npm run dev on term1" },
-    c = { ":1TermExec cmd=<C-c>", "cancel term1" },
+  name = "Terminal",
+  q = { ':exe 1 . "ToggleTerm"<CR>', "term1" },
+  w = { ':exe 2 . "ToggleTerm"<CR>', "term2" },
+  e = { ':exe 3 . "ToggleTerm"<CR>', "term3" },
+  r = { ':1TermExec cmd="cargo run"<CR>', "cargo run on term1" },
+  t = { ':1TermExec cmd="npm run dev"<CR>', "npm run dev on term1" },
+  c = { ":1TermExec cmd=<C-c>", "cancel term1" },
 }
 
 lvim.keys.normal_mode["<C-t>"] = ': exe 1 . "ToggleTerm"<CR>'
@@ -89,8 +88,8 @@ lvim.keys.term_mode["<C-t>"] = ': exe 1 . "ToggleTerm"<CR>'
 
 
 lvim.builtin.which_key.mappings["z"] = {
-    name = "zen",
-    m = { ":ZenMode<CR>", "Zen Mode" },
+  name = "zen",
+  m = { ":ZenMode<CR>", "Zen Mode" },
 }
 
 lvim.builtin.which_key.mappings["l"].t = { ":LspRestart<CR>", "restart LSP" }
@@ -120,9 +119,9 @@ lvim.builtin.which_key.mappings["k"] = { ":join!<CR>", "łącz linię bez spacji
 lvim.builtin.which_key.mappings["j"] = { ":join<CR>", "łącz linię ze spacją" }
 
 lvim.builtin.which_key.mappings["w"] = {
-    name = "Window",
-    v = { ":vsplit<CR>", "vertical split" },
-    s = { ":split<CR>", "horizontal split" },
+  name = "Window",
+  v = { ":vsplit<CR>", "vertical split" },
+  s = { ":split<CR>", "horizontal split" },
 }
 
 lvim.keys.normal_mode["<C-u>"] = "4k"
